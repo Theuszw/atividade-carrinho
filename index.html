@@ -4,62 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+   
     <!-- CSS (Próprio) -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    
+   
     <!-- Link das fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;700&family=Lato:wght@400;700&display=swap&quot; rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+   
     <title>Carrinho de Compras em JavaScript</title>
 
 </head>
 <body>
-  
-<!-- Seção de modelos de produtos -->
-<div class="models">
-    <!-- Estrutura de um único modelo de produto -->
-    <div class="models-item">
-        <a href="">
-            <div class="models-item--img">
-                <img src="#" alt="">
+    <!-- Seção de modelos de produtos -->
+    <div class="models">
+        <!-- Estrutura de um único modelo de produto -->
+        <div class="models-item">
+            <a href="">
+                <div class="models-item--img">
+                    <img src="#" alt="">
+                </div>
+                <div class="models-item--add">+</div>
+            </a>
+            <div class="models-item--price">R$ --</div>
+            <div class="models-item--name">--</div>
+            <div class="models-item--desc">--</div>
+        </div>
+        <!-- Estrutura de um item no carrinho de compras -->
+        <div class="cart--item">
+            <img src="#" alt="">
+            <div class="cart--item--nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item--qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item--qtmais">+</button>
             </div>
-            <div class="models-item--add">+</div>
-        </a>
-        <div class="models-item--price">R$ --</div>
-        <div class="models-item--name">--</div>
-        <div class="models-item--desc">--</div>
-    </div>
-    <!-- Estrutura de um item no carrinho de compras -->
-    <div class="cart--item">
-        <img src="#" alt="">
-        <div class="cart--item--nome">--</div>
-        <div class="cart--item--qtarea">
-            <button class="cart--item--qtmenos">-</button>
-            <div class="cart--item--qt">1</div>
-            <button class="cart--item--qtmais">+</button>
         </div>
     </div>
-</div>
 
-<!-- Cabeçalho da página -->
-<header>
-    <!-- Ícone de carrinho de compras com contador -->
-    <div class="menu-openner">
-        <span>0</span>
-        <span class="material-icons">
-            shopping_cart
-        </span>
-    </div>
-</header>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Ícone de carrinho de compras com contador -->
+        <div class="menu-openner">
+            <span>0</span>
+            <span class="material-icons">
+                shopping_cart
+            </span>
+        </div>
+    </header>
 
-<!-- Corpo principal da página -->
-<main>
-    <h1>Modelos</h1>
-    <div class="models-area"></div>
-</main>
-
+    <!-- Corpo principal da página -->
+    <main>
+        <h1>Modelos</h1>
+        <div class="models-area"></div>
+    </main>
+   
     <!-- Barra lateral para exibição do carrinho -->
     <aside>
         <div class="cart--area">
@@ -72,7 +71,7 @@
 
             <!-- Exibição dos itens no carrinho -->
             <div class="cart"></div>
-            <!-- Detalhes do carrinho, incluindo subtotal, desconto e total -->
+            <!-- Detalhes do carrinho, incluindo subtotal, desconto, e total -->
             <div class="cart--details">
                 <div class="cart--totalitem subtotal">
                     <span>Subtotal</span>
@@ -86,7 +85,7 @@
                     <span>Total</span>
                     <span>R$ --</span>
                 </div>
-                <!-- Botão para finalizar a compra  -->
+                <!-- Botão para finalizar a compra -->
                 <div class="cart--finalizar">Finalizar a compra</div>
             </div>
         </div>
@@ -104,13 +103,13 @@
             <div class="modelsInfo">
                 <h1>--</h1>
                 <div class="modelsInfo--desc">--</div>
-                <!-- Opções e tamanho do modelo -->
+                <!-- Opções de tamanho do modelo -->
                 <div class="modelsInfo--sizearea">
                     <div class="modelsInfo--sector">Escala</div>
                     <div class="modelsInfo--sizes">
-                        <div data-key="0" class="modelsInfo--size selected">Pequeno<span> --</span></div>
-                        <div data-key="1" class="modelsInfo--size selected">Médio<span> --</span></div>
-                        <div data-key="2" class="modelsInfo--size selected">Grande<span> --</span></div>
+                        <div data-key="0" class="modelsInfo--size selected">Pequeno  <span> --</span></div>
+                        <div data-key="1" class="modelsInfo--size">Médio  <span> --</span></div>
+                        <div data-key="2" class="modelsInfo--size">Grande  <span> --</span></div>
                     </div>
                 </div>
                 <!-- Área de exibição e seleção de preço -->
@@ -118,7 +117,7 @@
                     <div class="modelsInfo--sector">Preço</div>
                     <div class="modelsInfo--price">
                         <div class="modelsInfo--actualPrice">R$ --</div>
-                        <!-- Botões para aumentar e diminuiur a quantidade  -->
+                        <!-- Botões para aumentar e diminuir a quantidade -->
                         <div class="modelsInfo--qtarea">
                             <button class="modelsInfo--qtmenos">-</button>
                             <div class="modelsInfo--qt">1</div>
